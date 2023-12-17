@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            background-image: url('images/b2.jpg'); /* Замените 'images/b2.jpg' на ваш путь к изображению фона */
+            background-size: cover;
+        }
+
+        .aviasales-block {
+            position: absolute;
+            color: white;
+            font-size: 25px; /* Уменьшаем размер текста */
+            text-align: right;
+            z-index: 0;
+        }
+
+        .aviasales-block img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* Радиус закругления углов изображения */
+        }
+
+        .aviasales-block span {
+            color: white;
+            font-size: 25px; /* Уменьшаем размер текста */
+            text-align: right;
+            display: block;
+            text-shadow: 4px 4px 8px black; /* Увеличиваем тень текста */
+        }
+
+        /* Увеличьте или уменьшите значения right, top, bottom, left, чтобы разместить блоки как вам нужно */
+        .aviasales-block:nth-child(1) { /* Рекламный блок 1 */
+            right: 20px;
+            top: 20px;
+        }
+
+        .aviasales-block:nth-child(2) { /* Рекламный блок 2 */
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .aviasales-block:nth-child(3) { /* Рекламный блок 3 */
+            right: 70%;
+            bottom: 20px;
+        }
+
+        .aviasales-block:nth-child(4) { /* Рекламный блок 4 */
+            left: 50%;
+            top: 10%;
+            transform: translate(-50%, 0);
+        }
+
+        .aviasales-block:nth-child(5) { /* Рекламный блок 5 */
+            right: 30px;
+            bottom: 50%;
+            transform: translateY(40%);
+        }
+
+        .aviasales-block:nth-child(6) { /* Рекламный блок 6 */
+            left: 10%;
+            top: 70%;
+            transform: translateY(-70%);
+        }
+
+        .aviasales-block:nth-child(7) { /* Рекламный блок 7 */
+            right: 5%;
+            top: 40%;
+        }
+
+        .aviasales-block:nth-child(8) { /* Рекламный блок 8 */
+            left: 20%;
+            bottom: 10%;
+        }
+
+        .aviasales-block:nth-child(9) { /* Рекламный блок 9 */
+            right: 15%;
+            top: 15%;
+        }
+
+        .aviasales-block:nth-child(10) { /* Рекламный блок 10 */
+            left: 5%;
+            bottom: 30%;
+        }
+
+        .aviasales-block:nth-child(11) { /* Рекламный блок 11 */
+            left: 10%;
+            bottom: 15%;
+        }
+
+        .aviasales-block:nth-child(12) { /* Рекламный блок 12 */
+            right: 25%;
+            top: 30%;
+        }
+
+        .aviasales-block:nth-child(13) { /* Рекламный блок 13 */
+            left: 15%;
+            top: 60%;
+        }
+
+        .aviasales-block:nth-child(14) { /* Рекламный блок 14 */
+            right: 20%;
+            bottom: 25%;
+        }
+
+        .aviasales-block:nth-child(15) { /* Рекламный блок 15 */
+            left: 5%;
+            top: 20%;
+        }
+
+        .aviasales-block:nth-child(16) { /* Рекламный блок 16 */
+            right: 15%;
+            bottom: 40%;
+        }
+
+        .aviasales-block:nth-child(17) { /* Рекламный блок 17 */
+            left: 30%;
+            top: 10%;
+        }
+
+        .aviasales-block:nth-child(18) { /* Рекламный блок 18 */
+            right: 10%;
+            bottom: 15%;
+        }
+
+        .aviasales-block:nth-child(19) { /* Рекламный блок 19 */
+            left: 25%;
+            top: 40%;
+        }
+
+        .aviasales-block:nth-child(20) { /* Рекламный блок 20 */
+            right: 5%;
+            bottom: 20%;
+        }
+
+        .aviasales-block:nth-child(21) { /* Рекламный блок 21 */
+            left: 20%;
+            top: 5%;
+        }
+
+        .aviasales-block:nth-child(22) { /* Рекламный блок 22 */
+            right: 30%;
+            bottom: 30%;
+        }
+
+        .aviasales-block:nth-child(23) { /* Рекламный блок 23 */
+            left: 5%;
+            top: 25%;
+        }
+
+        .aviasales-block:nth-child(24) { /* Рекламный блок 24 */
+            right: 25%;
+            bottom: 10%;
+        }
+
+        .aviasales-block:nth-child(25) { /* Рекламный блок 25 */
+            left: 15%;
+            top: 50%;
+        }
+
+        .aviasales-block:nth-child(26) { /* Рекламный блок 26 */
+            right: 20%;
+            bottom: 5%;
+        }
+
+        .aviasales-block:nth-child(27) { /* Рекламный блок 27 */
+            left: 10%;
+            top: 35%;
+        }
+
+        .aviasales-block:nth-child(28) { /* Рекламный блок 28 */
+            right: 15%;
+            bottom: 35%;
+        }
+
+        .aviasales-block:nth-child(29) { /* Рекламный блок 29 */
+            left: 30%;
+            top: 15%;
+        }
+
+        .aviasales-block:nth-child(30) { /* Рекламный блок 30 */
+            right: 10%;
+            bottom: 30%;
+        }
+
+        .center-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            transition: border 0.3s ease, border-radius 0.3s ease;
+            border: 3px solid transparent;
+            border-radius: 20px; /* Радиус закругления кнопки */
+            z-index: 1; /* Помещаем кнопку поверх текста на фоне */
+            position: relative;
+            top: -50px; /* Уменьшаем значение top для поднятия кнопки выше */
+        }
+
+        .center-button:hover {
+            border-color: #000000; /* Усиляем черную обводку */
+            border-width: 10px; /* Увеличиваем ширину обводки при наведении */
+        }
+
+        .center-button.clicked {
+            border-color: transparent; /* Убираем обводку при нажатии */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Рекламные блоки Aviasales с изображениями -->
+    <div class="aviasales-block">
+        <span>#Aviasales - ваш надежный партнер в мире путешествий</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Лучшие цены на билеты, только на Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Эксклюзивные скидки для наших клиентов</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Отпуск вашей мечты с Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Бронируйте с умом, выбирайте Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Путешествуйте с комфортом и экономьте с Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Откройте для себя новые горизонты с Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Не упустите свой шанс - самые выгодные предложения здесь!</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Планируйте свое путешествие с Aviasales и наслаждайтесь каждым моментом</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Акции и специальные предложения ждут вас на Aviasales</span>
+    </div>
+
+    <!-- Дополнительные блоки -->
+    <div class="aviasales-block">
+        <span>#Отличный выбор! Только Aviasales!</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Сравните цены и выберите Aviasales - вы не пожалеете</span>
+    </div>
+    <div class="aviasales-block">
+        <span>Уникальные предложения каждому клиенту Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Ваш билет в мир приключений - Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Дешевле не бывает! Только на Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Путешествуйте с выгодой - выбирайте Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Билеты по лучшим ценам - только у нас!</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Забронируйте свое приключение с Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Лучший сервис для ваших путешествий - Aviasales</span>
+    </div>
+    <div class="aviasales-block">
+        <span>#Будьте в курсе выгодных предложений - Aviasales</span>
+    </div>
+
+    <button class="center-button" onclick="changeColor()">Нажми меня</button>
+
+    <script>
+        function changeColor() {
+            var button = document.querySelector('.center-button');
+            button.classList.add('clicked');
+
+            // Открываем картинку в новом окне
+            window.open('images/b1.jpg', '_blank');
+        }
+    </script>
+<a><b>был бы я не дауном было бы все хорошо</b></a>
+</body>
+</html>
